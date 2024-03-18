@@ -377,9 +377,8 @@ def inference_tab():
             vc_output2 = gr.Audio(label=i18n("Export Audio"))
 
     # Batch inference tab
-    with gr.Tab(i18n("Batch")):
-        with gr.Row():
-            with gr.Column():
+
+           with gr.Column():
                 input_folder_batch = gr.Textbox(
                     label=i18n("Input Folder"),
                     info=i18n("Select the folder containing the audios to convert."),
